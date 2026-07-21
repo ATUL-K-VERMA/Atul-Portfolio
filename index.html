@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atul Kumar | AI & Machine Learning Engineer</title>
+    <meta name="description" content="Portfolio of Atul Kumar — AI & Machine Learning Engineer specialising in Deep Learning, NLP, Computer Vision, and Generative AI. Oracle OCI 2025 Certified Data Science Professional.">
+    <meta name="keywords" content="Atul Kumar, AI Engineer, Machine Learning, Portfolio, Deep Learning, NLP, Computer Vision">
+    <meta name="author" content="Atul Kumar">
+
+    <!-- Favicon (emoji fallback) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Lucide Icons (lightweight SVG icon lib) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<!-- ============================================================
+     PARTICLE CANVAS
+     ============================================================ -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ============================================================
+     MOBILE OVERLAY
+     ============================================================ -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">AK.</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="hero">
+    <span class="hero-badge">Available for Opportunities</span>
+    <h1>ATUL KUMAR</h1>
+    <p class="hero-subtitle" id="heroSubtitle"></p>
+    <p class="hero-tagline">
+        Building intelligent systems for Healthcare, Agriculture, Connected Vehicles &amp; Computer Vision — powered by Python, TensorFlow, LangChain &amp; RAG.
+    </p>
+    <div class="hero-buttons">
+        <a href="mailto:atulkumar18965@gmail.com" class="btn btn-primary">
+            <i data-lucide="mail" style="width:18px;height:18px;"></i> Get in Touch
+        </a>
+        <a href="#projects" class="btn btn-outline">
+            <i data-lucide="folder-open" style="width:18px;height:18px;"></i> View Projects
+        </a>
+    </div>
+    <div class="hero-socials">
+        <a href="https://linkedin.com/in/atul-kumar" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i data-lucide="linkedin" style="width:20px;height:20px;"></i>
+        </a>
+        <a href="https://github.com/ATUL-K-VERMA" target="_blank" rel="noopener" aria-label="GitHub">
+            <i data-lucide="github" style="width:20px;height:20px;"></i>
+        </a>
+        <a href="https://leetcode.com/u/ATUL-KUMAR07/" target="_blank" rel="noopener" aria-label="LeetCode">
+            <i data-lucide="code" style="width:20px;height:20px;"></i>
+        </a>
+        <a href="mailto:atulkumar18965@gmail.com" aria-label="Email">
+            <i data-lucide="mail" style="width:20px;height:20px;"></i>
+        </a>
+        <a href="tel:+916207760399" aria-label="Phone">
+            <i data-lucide="phone" style="width:20px;height:20px;"></i>
+        </a>
+    </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about">
+    <div class="section-header reveal">
+        <h2>About Me</h2>
+        <div class="section-divider"></div>
+    </div>
+    <div class="about-content reveal">
+        <p>
+            Final-year <strong>B.Tech Computer Science &amp; Engineering (AI &amp; ML)</strong> student at GIET University with hands-on experience in Machine Learning, Deep Learning, Computer Vision, NLP, and Generative AI.
+            <strong>Oracle Cloud Infrastructure 2025 Certified Data Science Professional</strong> with industry experience at
+            <strong>Volvo Eicher Commercial Vehicles (VECV)</strong>, contributing to AI/ML solutions for connected vehicles, telematics analytics, and ADAS.
+        </p>
+        <p>
+            Proven ability to design and deploy end-to-end AI applications, ML inference pipelines, REST APIs, and intelligent analytics solutions.
+            Passionate about building scalable, production-ready AI systems.
+        </p>
+    </div>
+    <div class="stats-grid reveal stagger-children">
+        <div class="stat-card" style="--i:0">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Key Projects</div>
+        </div>
+        <div class="stat-card" style="--i:1">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">LeetCode Problems</div>
+        </div>
+        <div class="stat-card" style="--i:2">
+            <div class="stat-number">OCI</div>
+            <div class="stat-label">Certified Professional</div>
+        </div>
+        <div class="stat-card" style="--i:3">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Internships</div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section id="experience">
+    <div class="section-header reveal">
+        <h2>Experience</h2>
+        <p>Professional journey in AI &amp; Machine Learning</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="timeline">
+        <!-- VECV -->
+        <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <span class="timeline-date">May 2026 – Aug 2026</span>
+                <h3>AI/ML Intern — Connected Vehicles &amp; ADAS</h3>
+                <p class="company">Volvo Eicher Commercial Vehicles (VECV) · On-site</p>
+                <ul>
+                    <li>Developed AI/ML solutions for connected vehicle analytics by processing large-scale CAN bus and telematics datasets using Python and ML techniques.</li>
+                    <li>Designed data preprocessing pipelines, feature engineering workflows, and predictive analytics models for commercial vehicle applications.</li>
+                    <li>Contributed to an Advanced Driver Assistance Systems (ADAS) project — data analysis, model development, testing &amp; validation of AI-based perception algorithms.</li>
+                    <li>Collaborated with cross-functional engineering teams to improve model performance and support deployment-ready AI solutions.</li>
+                    <li>Worked with Python, Pandas, NumPy, scikit-learn, computer vision, and automotive datasets in an industrial R&amp;D environment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- AICTE × Google -->
+        <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <span class="timeline-date">Jan 2026 – Mar 2026</span>
+                <h3>AI-ML Virtual Intern</h3>
+                <p class="company">AICTE – EduSkills × Google for Developers India · GIET University</p>
+                <ul>
+                    <li>Completed a rigorous 10-week AICTE-accredited AI/ML internship supported by Google for Developers, covering supervised &amp; unsupervised learning, deep learning, NLP, and model deployment.</li>
+                    <li>Applied end-to-end ML pipelines spanning data preprocessing, feature engineering, model training, cross-validation, and evaluation.</li>
+                    <li>Achieved <strong>Grade O (Outstanding, 90–100 band)</strong> — highest performance tier — recognised by AICTE and endorsed by Google Developer Ecosystem Lead for India &amp; MENA.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- YHills -->
+        <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <span class="timeline-date">2024</span>
+                <h3>Machine Learning Intern</h3>
+                <p class="company">YHills</p>
+                <ul>
+                    <li>Architected multi-class ML classification pipelines for SwasthaAI, a disease-prediction platform, leveraging NLP preprocessing, OCR-based medicine verification, and scikit-learn classifiers.</li>
+                    <li>Designed feature extraction workflows and applied hyperparameter tuning to optimise model accuracy and reduce prediction latency across multilingual health-query classification.</li>
+                    <li>Designed and deployed Flask-based REST APIs enabling real-time disease prediction with NLP integration, delivering a production-grade AI healthcare assistant supporting multiple Indian languages.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="projects">
+    <div class="section-header reveal">
+        <h2>Projects</h2>
+        <p>Showcasing end-to-end AI/ML solutions</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="projects-grid stagger-children">
+        <!-- Fleet Telematics -->
+        <div class="project-card reveal-scale" style="--i:0">
+            <div class="project-icon">🚛</div>
+            <h3>Fleet Telematics Analytics Platform</h3>
+            <p>Developed a 6-step packet loss detection algorithm for multi-device CAN bus telemetry from VECV/WABCO BS4/BS6 fleet vehicles. Implemented Isolation Forest anomaly detection and Random Forest fault-risk classifier, identifying a device with 780+ fault events over 12+ consecutive days. Delivered a dark-themed Chart.js analytics dashboard with dual Y-axis KPI cards, ML overlays, and multi-format export.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>scikit-learn</span><span>Chart.js</span><span>Isolation Forest</span><span>Random Forest</span>
+            </div>
+        </div>
+
+        <!-- SwasthaAI -->
+        <div class="project-card reveal-scale" style="--i:1">
+            <div class="project-icon">🏥</div>
+            <h3>SwasthaAI — AI Healthcare Assistant</h3>
+            <p>Designed an end-to-end ML inference pipeline for symptom-based multi-class disease prediction, integrating NLP preprocessing, OCR-based medicine verification, and a multilingual chat interface. Deployed production Flask REST APIs serving real-time classification outputs with multi-language support for underserved communities.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>TensorFlow</span><span>NLP</span><span>OCR</span><span>REST API</span>
+            </div>
+        </div>
+
+        <!-- Smart Agriculture -->
+        <div class="project-card reveal-scale" style="--i:2">
+            <div class="project-icon">🌾</div>
+            <h3>Smart Agriculture Prediction System</h3>
+            <p>Led a 3-member agile team to build a precision agriculture platform predicting crop yield, fertilizer needs, and water consumption using ML regression models integrated with real-time Weather API feeds. Implemented an SMS-based real-time advisory alert system delivering data-driven agricultural recommendations to farmers.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>ML</span><span>Weather API</span><span>Twilio</span>
+            </div>
+        </div>
+
+        <!-- Face Mask -->
+        <div class="project-card reveal-scale" style="--i:3">
+            <div class="project-icon">😷</div>
+            <h3>Real-Time Face Mask Detection</h3>
+            <p>Built a CNN-based real-time face mask detection system using MobileNetV2 transfer learning, achieving live webcam inference with bounding box localisation, confidence scores, and mask/no-mask classification. Applied data augmentation and fine-tuning on a custom-labelled dataset for real-time inference on commodity hardware.</p>
+            <div class="project-tags">
+                <span>TensorFlow</span><span>MobileNetV2</span><span>OpenCV</span><span>Transfer Learning</span><span>CNN</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section id="skills">
+    <div class="section-header reveal">
+        <h2>Technical Skills</h2>
+        <p>Technologies and tools I work with</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="skills-container stagger-children">
+        <div class="skill-group reveal" style="--i:0">
+            <h3>Languages &amp; Frameworks</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Flask</span>
+                <span class="skill-tag">FastAPI</span>
+            </div>
+        </div>
+
+        <div class="skill-group reveal" style="--i:1">
+            <h3>AI / ML &amp; Deep Learning</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">scikit-learn</span>
+                <span class="skill-tag">Random Forest</span>
+                <span class="skill-tag">MobileNetV2</span>
+                <span class="skill-tag">Feature Engineering</span>
+                <span class="skill-tag">Hyperparameter Tuning</span>
+                <span class="skill-tag">Transfer Learning</span>
+            </div>
+        </div>
+
+        <div class="skill-group reveal" style="--i:2">
+            <h3>Generative AI &amp; LLMs</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">RAG Pipelines</span>
+                <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Large Language Models</span>
+            </div>
+        </div>
+
+        <div class="skill-group reveal" style="--i:3">
+            <h3>Data Engineering &amp; Analytics</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">ETL Pipelines</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">Chart.js</span>
+                <span class="skill-tag">Data Visualisation</span>
+            </div>
+        </div>
+
+        <div class="skill-group reveal" style="--i:4">
+            <h3>DevOps &amp; Tools</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Jupyter Notebook</span>
+                <span class="skill-tag">VS Code</span>
+            </div>
+        </div>
+
+        <div class="skill-group reveal" style="--i:5">
+            <h3>Cloud &amp; Platforms</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">Oracle Cloud (OCI)</span>
+                <span class="skill-tag">AICTE Portal</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION
+     ============================================================ -->
+<section id="education">
+    <div class="section-header reveal">
+        <h2>Education</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="education-grid stagger-children">
+        <div class="education-card reveal-scale" style="--i:0">
+            <div class="edu-icon">🎓</div>
+            <h3>B.Tech — CSE (AI &amp; ML)</h3>
+            <p class="edu-school">GIET University, Gunupur, Odisha</p>
+            <p class="edu-year">2023 – 2027</p>
+            <span class="edu-score">CGPA: 7.2</span>
+        </div>
+        <div class="education-card reveal-scale" style="--i:1">
+            <div class="edu-icon">📚</div>
+            <h3>Class XII — Science</h3>
+            <p class="edu-school">RVS Bokaro</p>
+            <p class="edu-year">2022</p>
+            <span class="edu-score">75%</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     ACHIEVEMENTS
+     ============================================================ -->
+<section id="achievements">
+    <div class="section-header reveal">
+        <h2>Achievements &amp; Certifications</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="achievements-list stagger-children">
+        <div class="achievement-item reveal" style="--i:0">
+            <span class="achievement-icon">☁️</span>
+            <p><strong>Oracle Cloud Infrastructure 2025</strong> Certified Data Science Professional</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:1">
+            <span class="achievement-icon">🏅</span>
+            <p><strong>AI-ML Virtual Internship</strong> — AICTE × EduSkills × Google for Developers · Grade O (Outstanding) · Jan–Mar 2026</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:2">
+            <span class="achievement-icon">🥈</span>
+            <p><strong>2nd Prize — Hacknovation</strong> (Inter-College Hackathon)</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:3">
+            <span class="achievement-icon">🏆</span>
+            <p><strong>IIT Bhubaneswar</strong> Data Science Hackathon — Participant</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:4">
+            <span class="achievement-icon">🏆</span>
+            <p><strong>BITS Pilani Hyderabad</strong> Hackathon &amp; Technical Workshop — Participant · Jan 2026</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:5">
+            <span class="achievement-icon">🏆</span>
+            <p><strong>Smart India Hackathon (SIH)</strong> — 2023, 2024 &amp; 2025</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:6">
+            <span class="achievement-icon">💻</span>
+            <p><strong>150+ Problems Solved</strong> on LeetCode (DSA)</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:7">
+            <span class="achievement-icon">📊</span>
+            <p><strong>HP LIFE:</strong> Data Science &amp; Analytics — HP Foundation · May 2025</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:8">
+            <span class="achievement-icon">🎤</span>
+            <p><strong>Nationwide Webinar</strong> — TechMindSparc Innovations</p>
+        </div>
+        <div class="achievement-item reveal" style="--i:9">
+            <span class="achievement-icon">📗</span>
+            <p><strong>Simplilearn SkillUP:</strong> Introduction to MS Excel · Jun 2024</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+    <div class="section-header reveal">
+        <h2>Get in Touch</h2>
+        <p>Let's build something amazing together</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="contact-wrapper reveal">
+        <!-- Info -->
+        <div class="contact-info">
+            <p>I'm currently looking for opportunities as an <strong>AI/ML Engineer</strong>. Whether you have a question, a project idea, or just want to connect — feel free to reach out!</p>
+
+            <a href="mailto:atulkumar18965@gmail.com" class="contact-link">
+                <span class="contact-link-icon"><i data-lucide="mail" style="width:18px;height:18px;"></i></span>
+                atulkumar18965@gmail.com
+            </a>
+            <a href="tel:+916207760399" class="contact-link">
+                <span class="contact-link-icon"><i data-lucide="phone" style="width:18px;height:18px;"></i></span>
+                +91 6207760399
+            </a>
+            <a href="https://linkedin.com/in/atul-kumar" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></span>
+                linkedin.com/in/atul-kumar
+            </a>
+            <a href="https://github.com/ATUL-K-VERMA" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link-icon"><i data-lucide="github" style="width:18px;height:18px;"></i></span>
+                github.com/ATUL-K-VERMA
+            </a>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message..." required></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+                <i data-lucide="send" style="width:18px;height:18px;"></i> Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+    <div class="footer-socials">
+        <a href="https://linkedin.com/in/atul-kumar" target="_blank" rel="noopener" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+        <a href="https://github.com/ATUL-K-VERMA" target="_blank" rel="noopener" aria-label="GitHub"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+        <a href="https://leetcode.com/u/ATUL-KUMAR07/" target="_blank" rel="noopener" aria-label="LeetCode"><i data-lucide="code" style="width:18px;height:18px;"></i></a>
+        <a href="mailto:atulkumar18965@gmail.com" aria-label="Email"><i data-lucide="mail" style="width:18px;height:18px;"></i></a>
+    </div>
+    <p>&copy; 2026 Atul Kumar. Crafted with passion &amp; Python.</p>
+</footer>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+/* =============================================================
+   1. INITIALIZE LUCIDE ICONS
+   ============================================================= */
+lucide.createIcons();
+
+/* =============================================================
+   2. THREE.JS PARTICLE BACKGROUND
+   ============================================================= */
+(function () {
+    const canvas = document.getElementById('bg-canvas');
+    const scene  = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 35;
+
+    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    /* -- Particles -- */
+    const count = 1800;
+    const positions = new Float32Array(count * 3);
+    const colors    = new Float32Array(count * 3);
+
+    const cyan   = new THREE.Color(0x00d4ff);
+    const blue   = new THREE.Color(0x4a6cf7);
+    const violet = new THREE.Color(0x9b5de5);
+
+    for (let i = 0; i < count; i++) {
+        positions[i * 3]     = (Math.random() - 0.5) * 200;
+        positions[i * 3 + 1] = (Math.random() - 0.5) * 200;
+        positions[i * 3 + 2] = (Math.random() - 0.5) * 200;
+
+        const t = Math.random();
+        const col = t < 0.5
+            ? cyan.clone().lerp(blue, t * 2)
+            : blue.clone().lerp(violet, (t - 0.5) * 2);
+
+        colors[i * 3]     = col.r;
+        colors[i * 3 + 1] = col.g;
+        colors[i * 3 + 2] = col.b;
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geo.setAttribute('color',    new THREE.BufferAttribute(colors, 3));
+
+    const mat = new THREE.PointsMaterial({
+        size: 0.45,
+        vertexColors: true,
+        transparent: true,
+        opacity: 0.7,
+        sizeAttenuation: true
+    });
+
+    const particles = new THREE.Points(geo, mat);
+    scene.add(particles);
+
+    /* -- Mouse parallax -- */
+    let mouseX = 0, mouseY = 0;
+    document.addEventListener('mousemove', e => {
+        mouseX = (e.clientX / window.innerWidth  - 0.5) * 2;
+        mouseY = (e.clientY / window.innerHeight - 0.5) * 2;
+    });
+
+    /* -- Animate -- */
+    function animate() {
+        requestAnimationFrame(animate);
+        particles.rotation.y += 0.0006;
+        particles.rotation.x += 0.0003;
+
+        camera.position.x += (mouseX * 3  - camera.position.x) * 0.02;
+        camera.position.y += (-mouseY * 3 - camera.position.y) * 0.02;
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+})();
+
+/* =============================================================
+   3. TYPING EFFECT
+   ============================================================= */
+(function () {
+    const el = document.getElementById('heroSubtitle');
+    const phrases = [
+        'AI & Machine Learning Engineer',
+        'Deep Learning · NLP · Computer Vision',
+        'Generative AI · LangChain · RAG',
+        'Oracle OCI Certified Data Scientist',
+        'Final-Year B.Tech CSE (AI & ML)'
+    ];
+    let phraseIdx = 0, charIdx = 0, deleting = false;
+
+    function type() {
+        const current = phrases[phraseIdx];
+        if (!deleting) {
+            el.textContent = current.substring(0, charIdx + 1);
+            charIdx++;
+            if (charIdx === current.length) {
+                deleting = true;
+                setTimeout(type, 2000);
+                return;
+            }
+            setTimeout(type, 55);
+        } else {
+            el.textContent = current.substring(0, charIdx - 1);
+            charIdx--;
+            if (charIdx === 0) {
+                deleting = false;
+                phraseIdx = (phraseIdx + 1) % phrases.length;
+                setTimeout(type, 400);
+                return;
+            }
+            setTimeout(type, 30);
+        }
+    }
+    type();
+
+    /* Blinking cursor via CSS pseudo */
+    const style = document.createElement('style');
+    style.textContent = `
+        .hero-subtitle::after {
+            content: '|';
+            color: var(--accent-cyan);
+            animation: blink 1s step-end infinite;
+            margin-left: 2px;
+            font-weight: 300;
+        }
+    `;
+    document.head.appendChild(style);
+})();
+
+/* =============================================================
+   4. SCROLL REVEAL  (Intersection Observer)
+   ============================================================= */
+(function () {
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => observer.observe(el));
+})();
+
+/* =============================================================
+   5. NAVBAR — scroll background & active link
+   ============================================================= */
+(function () {
+    const navbar  = document.getElementById('navbar');
+    const links   = document.querySelectorAll('.nav-links a');
+    const sections = document.querySelectorAll('section[id]');
+
+    window.addEventListener('scroll', () => {
+        /* Navbar background */
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+
+        /* Active link */
+        let current = '';
+        sections.forEach(sec => {
+            if (window.scrollY >= sec.offsetTop - 120) {
+                current = sec.getAttribute('id');
+            }
+        });
+        links.forEach(a => {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+    });
+})();
+
+/* =============================================================
+   6. HAMBURGER MENU
+   ============================================================= */
+(function () {
+    const burger  = document.getElementById('hamburger');
+    const nav     = document.getElementById('navLinks');
+    const overlay = document.getElementById('mobileOverlay');
+
+    function closeMenu() {
+        burger.classList.remove('open');
+        nav.classList.remove('open');
+        overlay.classList.remove('active');
+    }
+
+    burger.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        burger.classList.toggle('open');
+        overlay.classList.toggle('active', isOpen);
+    });
+
+    overlay.addEventListener('click', closeMenu);
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+})();
+
+/* =============================================================
+   7. CONTACT FORM  (mailto fallback)
+   ============================================================= */
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name    = this.name.value;
+    const email   = this.email.value;
+    const message = this.message.value;
+    const mailto  = `mailto:atulkumar18965@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+    window.location.href = mailto;
+    this.reset();
+});
+</script>
+
+</body>
+</html>
